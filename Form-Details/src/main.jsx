@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import "./index.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "./index.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import InputForm from "./component/day1/form";
 import FormElement from "./component/day2/form1";
 import StateWithFC from "./component/day4/function-with-state";
@@ -78,6 +78,9 @@ import PeopleDetails from "./a revison/day11/peopleDetails";
 import Search from "./a revison/day13/Search";
 // import ErrorBoundary from "./a revison/day14/ErrorBoundary";
 import AutomaticCounter from "./a revison/day15/AutomaticCounter";
+import ApplyCSS from "./a revison/day17/ApplyCSS";
+import Registration from "./a revison/day18/Registration";
+import ShopKart from "./a revison/task2/ShopKart";
 
 const router = createBrowserRouter([
   // {
@@ -130,6 +133,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <ErrorBoundary>
       <Search />
     </ErrorBoundary> */}
-    <AutomaticCounter />
+    <App />
   </>
 );
