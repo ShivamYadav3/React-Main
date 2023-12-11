@@ -81,6 +81,7 @@ import AutomaticCounter from "./a revison/day15/AutomaticCounter";
 import ApplyCSS from "./a revison/day17/ApplyCSS";
 import Registration from "./a revison/day18/Registration";
 import ShopKart from "./a revison/task2/ShopKart";
+import Event from "./a revison/day21/Event";
 
 const router = createBrowserRouter([
   // {
@@ -99,18 +100,18 @@ const router = createBrowserRouter([
     path: "/",
     element: <App2 />,
   },
-  // {
-  //   path: "search",
-  //   element: <QueryParamsExample />,
-  // },
+  {
+    path: "search",
+    element: <QueryParamsExample />,
+  },
   // {
   //   path: "product-details/:meraProductId",
   //   element: <ProductDetails />,
   // },
-  {
-    path: "people-details",
-    element: <PeopleDetails />,
-  },
+  // {
+  //   path: "people-details",
+  //   element: <PeopleDetails />,
+  // },
   // {
   //   path: "*",
   //   element: <div>Bhiya, there is no such page</div>,
@@ -123,7 +124,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Calculator />
     </Provider> */}
     {/* <Home /> */}
-    {/* <RouterProvider router={router} /> */}
+    <RouterProvider router={router} />
     {/* <Search /> */}
     {/* <DynamicForm /> */}
     {/* <OTPComp /> */}
@@ -133,6 +134,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <ErrorBoundary>
       <Search />
     </ErrorBoundary> */}
-    <App />
+    {/* <QueryParamsExample /> */}
   </>
 );

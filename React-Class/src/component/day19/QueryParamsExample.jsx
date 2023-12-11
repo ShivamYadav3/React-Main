@@ -7,6 +7,7 @@ const QueryParamsExample = () => {
   const uState = new URLSearchParams(search).get("state");
 
   console.log({ uName, uCity, uState });
+  // console.log({ uName2 });
   return (
     <>
       <p>Query params example page</p>

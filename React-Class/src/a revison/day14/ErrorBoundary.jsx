@@ -50,26 +50,47 @@ const { Component } = require("react");
 // }
 // export default ErrorBoundary;
 
-class ErrorBoundary extends Component {
+// class ErrorBoundary extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = { hasError: false };
+//   }
+
+//   static getDerivedStateFromError(error) {
+//     return { hasError: true };
+//   }
+
+//   componentDidCatch(error, errorInfo) {
+//     console.log(error, errorInfo);
+//   }
+
+//   render() {
+//     if (hasError) {
+//       return <div>Check error in console</div>;
+//     }
+//     return this.props.children;
+//   }
+// }
+
+// export default ErrorBoundary;
+
+class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
     this.state = { hasError: false };
   }
-
-  static getDerivedStateFromError(error) {
+  static getDerivedStateFromError(err) {
     return { hasError: true };
   }
 
-  componentDidCatch(error, errorInfo) {
-    console.log(error, errorInfo);
+  componentDidCatch(err, info) {
+    console.log(err, info);
   }
 
   render() {
-    if (hasError) {
-      return <div>Check error in console</div>;
+    if (this.state.hasError) {
+      return <h1>Some Error occour check in console</h1>;
     }
     return this.props.children;
   }
 }
-
-export default ErrorBoundary;
