@@ -28,7 +28,7 @@ const Event = () => {
   return (
     <div>
       <div>event</div>
-      {isSpaceBarPressed ? <div>space bAr is pressed</div> : ""}
+      {isSpaceBarPressed ? <div>space bar is pressed</div> : ""}
     </div>
   );
 };
